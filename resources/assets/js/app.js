@@ -6,6 +6,12 @@ import Vuetify from 'vuetify'
 
 Vue.use(Vuetify)
 
+//Helpes
+
+import User from './Helpers/User'
+
+window.User = User
+
 
 Vue.component('AppHome', require('./components/AppHome.vue'));
 
