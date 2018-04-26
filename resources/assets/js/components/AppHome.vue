@@ -4,10 +4,7 @@
     
     <side-navbar></side-navbar>
     
-    <div>
-        <h1>Header one two</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tenetur dicta repellendus quo enim, alias mollitia provident quaerat nemo quod dolorem. Mollitia porro debitis, magni accusantium, cumque dolores repudiandae quaerat! ipsum dolor sit amet, consectetur adipisicing elit. At eaque necessitatibus nesciunt harum praesentium nisi deserunt fugit delectus quibusdam numquam ad, similique inventore, dolore commodi cum cupiditate consectetur ab facilis.</p>
-    </div>    
+     <router-view></router-view>
     
 
     <app-footer></app-footer>
@@ -24,11 +21,15 @@
     
     import SideNavbar from './includes/SideNavbar'
     import AppFooter from './includes/AppFooter'
+    import Login from './login/Login'
+    import Dashboard from './Dashboard'
     
   export default {
     components: {
-      SideNavbar,
-      AppFooter
+        SideNavbar,
+        AppFooter,
+        Login,
+        Dashboard
     }
   }
 </script>

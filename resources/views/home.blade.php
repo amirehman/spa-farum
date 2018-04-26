@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
-  <div id="app">
+  <div id="app"> 
     <v-app id="inspire">
       <app-home></app-home>
+     
     </v-app>
   </div>
 

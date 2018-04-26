@@ -6,7 +6,12 @@
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Icon Advertising LLC.</v-toolbar-title>
       
-<v-spacer></v-spacer>
+    <v-spacer></v-spacer>
+     
+     <router-link to="/login">
+         
+     </router-link>
+     
       <v-btn icon>
         <v-icon>search</v-icon>
       </v-btn>
@@ -49,16 +54,20 @@
       <v-list class="pt-0" dense>
         <v-divider></v-divider>
         
-         <v-list-tile>
-          <v-list-tile-action>
-            <v-icon>dashboard</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>Dashboard</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
+        <router-link to="/">
+            <v-list-tile @click="">
+              <v-list-tile-action>
+                <v-icon>dashboard</v-icon>
+              </v-list-tile-action>
+              <v-list-tile-content>
+                <v-list-tile-title>
+                    Dashboard
+                </v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+        </router-link>
         
-         <v-list-tile>
+         <v-list-tile @click="">
           <v-list-tile-action>
             <v-icon>dashboard</v-icon>
           </v-list-tile-action>
@@ -67,7 +76,7 @@
           </v-list-tile-content>
         </v-list-tile>
         
-         <v-list-tile>
+         <v-list-tile @click="">
           <v-list-tile-action>
             <v-icon>dashboard</v-icon>
           </v-list-tile-action>
@@ -77,7 +86,7 @@
         </v-list-tile>
         
         
-         <v-list-tile>
+         <v-list-tile @click="">
           <v-list-tile-action>
             <v-icon>dashboard</v-icon>
           </v-list-tile-action>
@@ -85,7 +94,8 @@
             <v-list-tile-title>Announcments</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        
+
+       
 <!--
          <v-list-tile v-for="item in items" :key="item.title" @click="">
           <v-list-tile-action>
@@ -120,3 +130,10 @@
   }
 </script>
       
+     
+<style scopped>
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>    
